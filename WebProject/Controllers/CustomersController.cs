@@ -25,10 +25,10 @@ namespace WebProject.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-           if(User.IsInRole(RoleName.CanManageMovies))
+           //if(User.IsInRole(RoleName.CanManageMovies))
             return View("CustomerList");
 
-            return View("ReadOnlyCustomers");
+           // return View("ReadOnlyCustomers");
 
            
         }
@@ -45,7 +45,7 @@ namespace WebProject.Controllers
             return View(customer);
         }
 
-        [Authorize(Roles =RoleName.CanManageMovies)]
+        //[Authorize(Roles =RoleName.CanManageMovies)]
         public ActionResult New()
         {
             var membershiptype = _context.MembershipTypes.ToList();
@@ -96,7 +96,7 @@ namespace WebProject.Controllers
            return RedirectToAction("Index", "Customers");
         }
 
-        [Authorize(Roles = RoleName.CanManageMovies)]
+        //[Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(int id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);

@@ -8,10 +8,15 @@
     <WebStackScaffolding_LayoutPageFile>~/Views/Shared/_Layout.cshtml</WebStackScaffolding_LayoutPageFile>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
-    <ProjectView>ProjectFiles</ProjectView>
+    <ProjectView>ShowAllFiles</ProjectView>
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <Use64BitIISExpress />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

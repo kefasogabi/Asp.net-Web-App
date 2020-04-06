@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -202,105 +203,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201710251004210_InitialMigration.cs" />
-    <Compile Include="Migrations\201710251004210_InitialMigration.Designer.cs">
-      <DependentUpon>201710251004210_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202003221552073_InitialModel.cs" />
+    <Compile Include="Migrations\202003221552073_InitialModel.Designer.cs">
+      <DependentUpon>202003221552073_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201710251012183_addIsSubcribedToCustomer.cs" />
-    <Compile Include="Migrations\201710251012183_addIsSubcribedToCustomer.Designer.cs">
-      <DependentUpon>201710251012183_addIsSubcribedToCustomer.cs</DependentUpon>
+    <Compile Include="Migrations\202003221600077_SeedGenre.cs" />
+    <Compile Include="Migrations\202003221600077_SeedGenre.Designer.cs">
+      <DependentUpon>202003221600077_SeedGenre.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201710251015303_addIsSubcribedToCustomer1.cs" />
-    <Compile Include="Migrations\201710251015303_addIsSubcribedToCustomer1.Designer.cs">
-      <DependentUpon>201710251015303_addIsSubcribedToCustomer1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710251026018_addMembershipType.cs" />
-    <Compile Include="Migrations\201710251026018_addMembershipType.Designer.cs">
-      <DependentUpon>201710251026018_addMembershipType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710251030476_PopulateMembershipTypes.cs" />
-    <Compile Include="Migrations\201710251030476_PopulateMembershipTypes.Designer.cs">
-      <DependentUpon>201710251030476_PopulateMembershipTypes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710251045443_ApplyAnnotationsToCustomerName.cs" />
-    <Compile Include="Migrations\201710251045443_ApplyAnnotationsToCustomerName.Designer.cs">
-      <DependentUpon>201710251045443_ApplyAnnotationsToCustomerName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710251123425_addNameToMembershipType.cs" />
-    <Compile Include="Migrations\201710251123425_addNameToMembershipType.Designer.cs">
-      <DependentUpon>201710251123425_addNameToMembershipType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710251126508_PopulateMembershipTypes1.cs" />
-    <Compile Include="Migrations\201710251126508_PopulateMembershipTypes1.Designer.cs">
-      <DependentUpon>201710251126508_PopulateMembershipTypes1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710251931419_addBirthdateToCustomers.cs" />
-    <Compile Include="Migrations\201710251931419_addBirthdateToCustomers.Designer.cs">
-      <DependentUpon>201710251931419_addBirthdateToCustomers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710252011322_Initial.cs" />
-    <Compile Include="Migrations\201710252011322_Initial.Designer.cs">
-      <DependentUpon>201710252011322_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710252027245_addNumberInStockToMovies.cs" />
-    <Compile Include="Migrations\201710252027245_addNumberInStockToMovies.Designer.cs">
-      <DependentUpon>201710252027245_addNumberInStockToMovies.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710252030058_addAlotOfThings.cs" />
-    <Compile Include="Migrations\201710252030058_addAlotOfThings.Designer.cs">
-      <DependentUpon>201710252030058_addAlotOfThings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710252038085_AddRemoveGenre.cs" />
-    <Compile Include="Migrations\201710252038085_AddRemoveGenre.Designer.cs">
-      <DependentUpon>201710252038085_AddRemoveGenre.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710252041099_addGenre.cs" />
-    <Compile Include="Migrations\201710252041099_addGenre.Designer.cs">
-      <DependentUpon>201710252041099_addGenre.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710252045209_PopulateGenres.cs" />
-    <Compile Include="Migrations\201710252045209_PopulateGenres.Designer.cs">
-      <DependentUpon>201710252045209_PopulateGenres.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710252343010_addremoveToCustomer.cs" />
-    <Compile Include="Migrations\201710252343010_addremoveToCustomer.Designer.cs">
-      <DependentUpon>201710252343010_addremoveToCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710252346119_addUpdateToCustomer.cs" />
-    <Compile Include="Migrations\201710252346119_addUpdateToCustomer.Designer.cs">
-      <DependentUpon>201710252346119_addUpdateToCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711010728132_ApplyannotationsToMovies.cs" />
-    <Compile Include="Migrations\201711010728132_ApplyannotationsToMovies.Designer.cs">
-      <DependentUpon>201711010728132_ApplyannotationsToMovies.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711180909528_SeedUsers.cs" />
-    <Compile Include="Migrations\201711180909528_SeedUsers.Designer.cs">
-      <DependentUpon>201711180909528_SeedUsers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711202103482_AddRemoveLicense.cs" />
-    <Compile Include="Migrations\201711202103482_AddRemoveLicense.Designer.cs">
-      <DependentUpon>201711202103482_AddRemoveLicense.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711202106530_addDrivingLicenseToRegForm.cs" />
-    <Compile Include="Migrations\201711202106530_addDrivingLicenseToRegForm.Designer.cs">
-      <DependentUpon>201711202106530_addDrivingLicenseToRegForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711221101429_addPhoneToRegister.cs" />
-    <Compile Include="Migrations\201711221101429_addPhoneToRegister.Designer.cs">
-      <DependentUpon>201711221101429_addPhoneToRegister.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711221106525_addRemovePhone.cs" />
-    <Compile Include="Migrations\201711221106525_addRemovePhone.Designer.cs">
-      <DependentUpon>201711221106525_addRemovePhone.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712011034228_addRental.cs" />
-    <Compile Include="Migrations\201712011034228_addRental.Designer.cs">
-      <DependentUpon>201712011034228_addRental.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712031908247_addNumberAvailable.cs" />
-    <Compile Include="Migrations\201712031908247_addNumberAvailable.Designer.cs">
-      <DependentUpon>201712031908247_addNumberAvailable.cs</DependentUpon>
+    <Compile Include="Migrations\202004061705289_changeNumberInStockToByte.cs" />
+    <Compile Include="Migrations\202004061705289_changeNumberInStockToByte.Designer.cs">
+      <DependentUpon>202004061705289_changeNumberInStockToByte.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -588,80 +501,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201710251004210_InitialMigration.resx">
-      <DependentUpon>201710251004210_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202003221552073_InitialModel.resx">
+      <DependentUpon>202003221552073_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710251012183_addIsSubcribedToCustomer.resx">
-      <DependentUpon>201710251012183_addIsSubcribedToCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202003221600077_SeedGenre.resx">
+      <DependentUpon>202003221600077_SeedGenre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710251015303_addIsSubcribedToCustomer1.resx">
-      <DependentUpon>201710251015303_addIsSubcribedToCustomer1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710251026018_addMembershipType.resx">
-      <DependentUpon>201710251026018_addMembershipType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710251030476_PopulateMembershipTypes.resx">
-      <DependentUpon>201710251030476_PopulateMembershipTypes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710251045443_ApplyAnnotationsToCustomerName.resx">
-      <DependentUpon>201710251045443_ApplyAnnotationsToCustomerName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710251123425_addNameToMembershipType.resx">
-      <DependentUpon>201710251123425_addNameToMembershipType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710251126508_PopulateMembershipTypes1.resx">
-      <DependentUpon>201710251126508_PopulateMembershipTypes1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710251931419_addBirthdateToCustomers.resx">
-      <DependentUpon>201710251931419_addBirthdateToCustomers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710252011322_Initial.resx">
-      <DependentUpon>201710252011322_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710252027245_addNumberInStockToMovies.resx">
-      <DependentUpon>201710252027245_addNumberInStockToMovies.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710252030058_addAlotOfThings.resx">
-      <DependentUpon>201710252030058_addAlotOfThings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710252038085_AddRemoveGenre.resx">
-      <DependentUpon>201710252038085_AddRemoveGenre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710252041099_addGenre.resx">
-      <DependentUpon>201710252041099_addGenre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710252045209_PopulateGenres.resx">
-      <DependentUpon>201710252045209_PopulateGenres.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710252343010_addremoveToCustomer.resx">
-      <DependentUpon>201710252343010_addremoveToCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710252346119_addUpdateToCustomer.resx">
-      <DependentUpon>201710252346119_addUpdateToCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711010728132_ApplyannotationsToMovies.resx">
-      <DependentUpon>201711010728132_ApplyannotationsToMovies.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711180909528_SeedUsers.resx">
-      <DependentUpon>201711180909528_SeedUsers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711202103482_AddRemoveLicense.resx">
-      <DependentUpon>201711202103482_AddRemoveLicense.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711202106530_addDrivingLicenseToRegForm.resx">
-      <DependentUpon>201711202106530_addDrivingLicenseToRegForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711221101429_addPhoneToRegister.resx">
-      <DependentUpon>201711221101429_addPhoneToRegister.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711221106525_addRemovePhone.resx">
-      <DependentUpon>201711221106525_addRemovePhone.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712011034228_addRental.resx">
-      <DependentUpon>201712011034228_addRental.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712031908247_addNumberAvailable.resx">
-      <DependentUpon>201712031908247_addNumberAvailable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202004061705289_changeNumberInStockToByte.resx">
+      <DependentUpon>202004061705289_changeNumberInStockToByte.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

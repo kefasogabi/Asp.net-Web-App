@@ -11,7 +11,7 @@ namespace WebProject.Controllers
 {
     public class MoviesController : Controller
     {
-        ApplicationDbContext _context;
+        private ApplicationDbContext _context;
         public MoviesController()
         {
             _context = new ApplicationDbContext();
@@ -26,11 +26,11 @@ namespace WebProject.Controllers
         {
             
 
-            if (User.IsInRole(RoleName.CanManageMovies))
+            //if (User.IsInRole(RoleName.CanManageMovies))
 
             return View("List");
 
-            return View("ReadOnlyList");
+           // return View("ReadOnlyList");
         }
 
         public ActionResult Details(int id)
@@ -44,7 +44,7 @@ namespace WebProject.Controllers
         }
 
 
-        [Authorize(Roles = RoleName.CanManageMovies)]
+        //[Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult New()   
         {
             var genre = _context.Genres.ToList();
@@ -76,7 +76,7 @@ namespace WebProject.Controllers
 
             if (movies.Id == 0)
             {
-
+                movies.NumberAvailable = movies.NumberInStock;
                 movies.DateAdded = DateTime.Now;
                 _context.Movies.Add(movies);
 
@@ -101,7 +101,7 @@ namespace WebProject.Controllers
             
         }
 
-        [Authorize(Roles = RoleName.CanManageMovies)]
+        //[Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(int id)
         {
             var movies = _context.Movies.SingleOrDefault(c => c.Id == id);

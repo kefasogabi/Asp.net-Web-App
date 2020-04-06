@@ -17,8 +17,9 @@ namespace WebProject.Dtos
         [Required]
         [Range(1, 20)]
         public int NumberInStock { get; set; }
+        public byte NumberAvailable { get; set; }
 
-       
+
         [Required]
         public byte GenreId { get; set; }
 

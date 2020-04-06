@@ -32,7 +32,6 @@ namespace WebProject.Controllers.Api
                 moviequery = moviequery.Where(c => c.Name.Contains(query));
 
             return moviequery
-
                 .ToList()
                 .Select(Mapper.Map<Movies, MovieDto>);
 
@@ -61,6 +60,7 @@ namespace WebProject.Controllers.Api
             var movie = Mapper.Map<MovieDto, Movies>(movieDto);
 
             movie.DateAdded = DateTime.Now;
+            movie.NumberAvailable = movie.NumberInStock;
 
             _context.Movies.Add(movie);
             _context.SaveChanges();
